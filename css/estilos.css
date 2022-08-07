@@ -1,4 +1,9 @@
-nav{
-     display: flex;
+
+
+.Productos img {
+width:400px ;
+height:400px ;
+}
+.Prodcutos h2{
      
 }

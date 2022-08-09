@@ -5,62 +5,22 @@ width:400px ;
 height:400px ;
 }
 
-
-
-
-
-section.miniBanners{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30em;
-    padding: 3em;
-    margin-top: 58px;
-    align-items: start;
-}
-.metodoPago{
-    display: flex;
-    flex-flow: column wrap;
-    font-size: 1cm;
-    margin-bottom:1.5em;
-}
-.metodoPago img{
-    height: 10em;
-    width: 14em;
-}
-.metodoPago h2{
-    font-size: 2em;
-    text-align: justify;
-}
-.contacto{
-    display: flex;
-    flex-flow:row wrap;
-    font-size: 1cm;
-    text-align: right;
-    font-weight: bolder;
-}
- .contacto form fieldset{
-    font-size: 1cm;
-   
-}  
-
-.listas ul li:hover{
-    transform: scale(1.5);
+body{
+    color:dimgray;
 }
 
-.registro:hover{
-    transform: scale(1.5);
-}
 
-.carrito:hover{
-    transform: scale(1.5);
-}
+.CarruselMain {   
+    margin-top: 4em;
 
+    margin-bottom:4em ;
+}
 
 
 /*/redes/*/
 section.redes{
     display:grid ;
-    margin-top: 3em;
+    margin-top: 4em;
     margin-bottom: 3em;
     padding: 2em;
 }
@@ -80,9 +40,11 @@ section.redes{
 }
 
 .redes h1{
+
     text-align: center;
     font-size: 6em;
     margin-bottom: 1em;
+
     font-weight: bolder;  
 
 }
@@ -123,13 +85,145 @@ footer{
     font-weight: bolder;
 
 }
-.ubicacionC img{
-    height: 15em;
-    width: 15em ;
 
-}
 .Footerdireccion h1{
     text-align: left;
     font-weight: bolder;
     font-size: 3em;
+}
+
+
+/*/responsive/*/
+
+
+@media (max-width: 576px) {
+   
+    .redes h1{
+
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 1em;
+    
+        font-weight: bolder;  
+    
+    }
+
+
+    .redes ul li a img {
+        width: 100px ;
+        height: 50px;
+        border: 0.5em double black;
+    
+    
+
+}
+
+.ubicacionC h1{
+    text-align: right;
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+
+.Footerdireccion h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1em;
+}
+}
+
+
+@media (min-width: 768px) {
+   
+        .redes ul li a img {
+            width: 200px ;
+            height: 100px;
+            border: 0.5em double black;
+        
+        }
+
+        .ubicacionC h1{
+            text-align: right;
+            font-size: 3em;
+            font-weight: bolder;
+        
+        }
+        
+        .Footerdireccion h1{
+            text-align: left;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+        }
+
+
+
+
+@media (min-width: 992px) { 
+    
+    .redes ul li a img {
+        width: 200px ;
+        height: 100px;
+        border: 0.5em double black;
+    
+
+
+
+    } }
+@media (min-width: 1200px) { 
+    
+    .redes ul li a img {
+        width: 200px ;
+        height: 100px;
+        border: 0.5em double black;
+    
+    
+    } }
+/*/
+
+section.miniBanners{
+    display: grid;
+    grid-template-columns: 100% 80%;
+    grid-template-rows: 49em;
+    padding: 1em;
+    margin-top: 5em;
+    margin-left: 12em;
+    align-items: start;
+}
+.metodoPago{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1cm;
+    margin-bottom:1.5em;
+}
+.metodoPago img{
+    height: 10em;
+    width: 14em;
+}
+.metodoPago h2{
+    font-size: 2em;
+    text-align: justify;
+}
+.contacto{
+    display: flex;
+    flex-flow:row wrap;
+    font-size: 1cm;
+    text-align: right;
+    font-weight: bolder;
+}
+ .contacto form fieldset{
+    font-size: 1cm;
+   
+}  
+
+.listas ul li:hover{
+    transform: scale(1.5);
+}
+
+.registro:hover{
+    transform: scale(1.5);
+}
+
+.carrito:hover{
+    transform: scale(1.5);
 }
